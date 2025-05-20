@@ -1,5 +1,17 @@
 # Base de Datos
 
+## How to use.
+- Set the virtual environment
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+- Run the program from the root directory.
+    ```bash
+    python -u src/questionnaire.py
+    ```
+
 ## Description of Directories.
 - docs:
     - Contains a resume in PDF format.
@@ -37,7 +49,7 @@
 
         - `_check_answer`: The use input is passed to it, and checks if it is `yes|y|no|n`, otherwise ask for a new input.
 
-        - `_get_answer`: Takes the user input and calls `_check_answer`, after that, returns whether the user answered yes or not
+        - `_get_answer`: Takes the user input and calls `_check_answer`, after that, returns whether the user answered yes or not.
 
         - `_start`: Main loop, runs through all the questions.
 
