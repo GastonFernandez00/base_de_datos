@@ -1,7 +1,9 @@
 [project]
-name = "parcial1"
+name = "questionnaire"
 version = "0.1.0"
-description = "Add your description here"
+description = "Programa para estudiar Base de Datos"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "radon>=6.0.1",
+]
