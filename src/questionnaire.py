@@ -84,6 +84,7 @@ Your answer: [y/n] || [yes/no]"""
             if self._json_file[-1]["answer"] == answer:
                 self._correct.append(self._json_file[-1])
             else:
+		print("ERROR")
                 self._wrong.append(self._json_file[-1])
 
             self._json_file.pop()
