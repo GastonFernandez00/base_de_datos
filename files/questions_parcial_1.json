@@ -1,559 +1,492 @@
 [
-	{
-		"question": "Una relacion uno a muchos en un der da origen a una nueva tabla",
-		"answer": false,
-		"explanation":null
-	},
-	{
-		"question":"En el analisis de las formas normales, cada relacion se analiza de manera separada del resto de relaciones",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Un DDL(data definition language) provee un lenguaje para la formulacion de consultas, entre otras cosas",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"en un der una interrelacion muchos a muchos genera un nuevo atributo en la tabla mas que tuplas tiene y que es clave foranea hacia la clave principal de la tabla que tiene menos registros",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Si tengo una relacion de la forma EMPLEADO(Legajo, Nombre, Apellido, Telefono) donde un empleado puede tener mas de un telefono el atributo 'legajo' es la clave principal y el atributo telefono es clave candidata",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Si una interrelacion uno a muchos tiene un atributo genera un atributo en la tabla del lado del muchos",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Las dependencias funcionales son un caso especial de las dependencias multivaluadas",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Un DDL(data definition language) provee un lenguaje para indicar los atributos de una tabla entre otras cosas",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"En un DER una interrelacion uno a uno de tipo 'es un' genera un nuevo campo o conjunto de campos en la tabla que tiene menor cantidad de registros y es una clave foranea que apunta a la clave de la tabla que tiene mayor cantidad de registros",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"La dependencia funciona X->Y es trivial si Y es un subconjunto de X (Y Incluido en X)",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Si tengo una relacion de la forma EMPLEADO(LEGAJO, DNI, NOMBRE, APELLIDO, TELEFONO) donde un empleado puede tener mas de un telefono, la clave principal es el conjunto de atributos ('legajo','telefono') y el conjunto ('dni','telefono') es la clave candidata",
-		"answer":true,
-		"explanation":"solo legajo no alcanza para definir el telefono"
-
-	},
-	{
-		"question":"las claves candidatas no necesariamente cumplen con la conficion de minimalidad",
-		"answer":false,
-		"explanation":"cumple con unicidad y minimalidad"
-
-	},
-	{
-		"question":"el conjunto de todas las tuplas posibles de una instancia de relacion es el resultado del producto cartesiano de todos los dominios de los atributos de la relacion",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Las dependencias funcionales determinan que algunas tuplas no son validas para el dominio del problema que las define",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"las dependencias funcionales junto con las dependencias multivaluadas se utilizan para determinas las claves principales y candidatas",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"el dominio de un atributo de una relacion puede ser un conjunto finito",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una clave candidata no cumple con el requisito de minimalidad como una clave principal o primaria",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"el analisis del cumplimiento de las formas normales se realiza por cada esquema de relacion independiente de los otros",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"la forma normal Boyce Codd es lo suficientemente generica para detectar todas las anomalías de actualización que pueden producirse",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"las formas normales son de cumplimiento obligatorio para un diseño correcto de una base de datos",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"un esquema indeseable no puede ser implementado en un SGBD",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"un DML no es estrictamente un lenguaje de computacion sino una forma de modelar el dominio del problema",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"cada tupla es una instancia de un esquema de relacion",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"las dependencias funcionales se definen en base al dominio del problema",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"cuando normalizo una relacion lo que hago es dividir la relacion para que cumpla con las formas normales",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"una relacion puede tener una o varias dependencias multivaluadas",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"implicacion de dependencias funcionales permite descomponer una dependencia funcional en varias para normalizar una relacion",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"la operacion de division del algebra relacional me permite determinar si todos los valores clave de una relacion son valor de un campo en otra relacion",
-		"answer":null,
-		"explanation":null
-
-	},
-	{
-		"question":"si un esquema esta normalizado significa que no puede ser subdividido sin perdida de informacion",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"las claves se deducen a partir de las dependencias funcionales y las multivaluadads",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"a todos los atributos de una relacion se les puede definir un dominio",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"si una relacion no tiene dependencias funcionales ni de junta, no se le puede definir una clave principal",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una clave foranea siempre apunta a una clave de otra relacion",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"cuando encontramos un ciclo DER y determinamos que hay informacion redundante da lo mismo eliminar cualquier interrelacion que forma parte del ciclo para eliminar la redundancia",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"la clausura de F la utilizo para determinar la clave",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"si un conjunto de atributos me determina toda la relacion entonces es una clave",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"si en una relacion encuentro mas de una clave quiere decir que la relacion esta desnormalizada",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una dependencia fucional no trivial es la que tiene mas de un atributo del lado izquierdo",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"para guardar un arbol jerarquico de datos utilizo una relacion con una FK a si misma",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"nunca puedo permitir nulos en los atributos que constituyen una FK",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"nunca puedo permitir nulos en los atributos que constituyen una PK",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"nunca puedo permitir nulos en los atributos que constituyen una clave candidata",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"si una interrelacion uno a muchos en un DER tiene un atributo este se convierte en un atributo de la entidad del lado uno",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Una relacion uno a muchos en un der da origen a una nueva tabla",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"si una relacion cumple con la forma normal 3 necesariamente cumple con la forma normal 2",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Un DDL(data definition language) provee un lenguaje para eliminar un registro entre otras cosas",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"en un der una interrelacion uno a muchos genera una nueva tabla con dos campos o conjuntos de campos que son claves foraneas a cada una de las claves de ambas tablas",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"si tengo una relacion de la forma EMPLEADO(legajo, nombre, apellido, telefono) donde un empleado puede tener mas de un telefono la clave sera el conjunto ('legajo', 'telefono')",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"la inyeccion de sql (sql injection) puede producirse cuando las tablas tienen datos erroneos",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"la inyeccion de sql (sql injection) puede producirse cuando hay un mal diseño de la base de datos",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"la inyeccion de sql (sql injection) puede producirse cuando nse otorgan privilegios innecesarios a los usuarios",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"la inyeccion de sql (sql injection) puede producirse cuando no se controlan los ingresos de textos por parte de los usuarios finales",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"en un der una interrelacion uno a uno de tipo 'es un' genera un nuevo campo/s en la tabla que tiene mayor cantidad de registros y es una clave foranea que apunta a la clave de una tabla que tiene menor cantidad de registros",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una relacion uno a muchos surge del analisis del dominio del problema",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave foranea",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave candidata",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para generar el diccionario de datos",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para poder modificar la estructura de las tablas si lo necesito",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para realizar las operaciones de ingreso de datos",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para eliminar registros de una tabla",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para poder implementar el diseño de SGBD",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: en las tuplas donde se repitan los valores de X obligatoriamente se deben repetir los valores de Y para que exista dependencia funcional",
-		"answer":true,
-		"explanation":null
-
-	},
-	{
-		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: que no deben existir valores repetidos de Y para que exista dependencia funcional",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: quiere decir que si el valor del atributo X en una tupla es igual al valor de X en otra tupla entonces deben ser siempre distintos valores de Y apra que exista dependencia funcional",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: que deben existir valores repetidos de X en distintas tuplas para que exista dependencia funcional",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: quiere decir que el valor del atributo X en una tupla tiene que ser siempre igual al valor de X en cualquier tupla y siempre distintos valores de Y para que exista dependencia funcional",
-		"answer":false,
-		"explanation":null
-
-	},
-	{
-		"question":"una transaccion se define en base al analisis del dominio del problema",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"una transaccion se define como un conjunto de operaciones que obligatoriamente deben ser recuperadas por el SGBD",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"una transaccion es parte del diseño de la base de datos",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"una transaccion se define al momento de la operacion y las implementa la aplicacion cliente",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"una transaccion se define como un conjunto de operaciones que no pueden fallar",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"La implicacion de las dependencias funcionales permiten identificar un esquema indeseable",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"La implicacion de las dependencias funcionales se utiliza para la determinacion de las claves de un esquema de relacion",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"La implicacion de las dependencias funcionales se puede determinar usando los axiomas de inferencia",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"La implicacion de las dependencias funcionales es la capacidad que tienen las DFs para poder deducir un nuevo conjunto de DFs a partir de un conjunto dado",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"La implicacion de las dependencias funcionales requiere que F(implicante) tenga mas de una DF",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"Una clave no puede contener todos los atributos de una relacion",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"si un conjunto de atributos determina toda la relacion entonces ese conjunto es clave",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"las claves candidatas son aquellas que no cumplen con la condicion de minimalidad",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"el conjunto de todos los atributos siempre es clave",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"el cumpimiento de una forma normal por parte de una relacion es independiente del cumplimiento o no de las FN por otras relaciones vinculadas de la misma base de datos",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"Un DDL (data definition language) provee un lenguaje para crear un nuevo schema entre otras cosas",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"una interrelacion mucho a muchos genera una nueva tabla con dos atributos que son claves foraneas a cada una de las claves de ambas tablas",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"si tengo una relacion de la forma EMPLEADO(legajo, dni, nombre, apellido, telefono) donde un empleado puede tener mas de un telefono la clave principal es el conjunto de atributos ('legajo','telefono') y el conjunto ('dni','telefono') es clave candidata",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"dada la relacion PERSONA(dni,nombrepersona,apellidopersona,dnihijo) donde la persona puede tener mas de un hijo esta relacion cumple con la forma normal 2 y no con la forma normal 3",
-		"answer":false,
-		"explanation":null 
-	},
-	{
-		"question":"dada una relacion PERSONA(dni, dnihijodelapersona,profesiondelapersona) donde la persona puede tener mas de un hijo y una profesion. Esta relacion no cumple con la forma normal 2",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, conviene: modelar la relacion de forma embebida",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, conviene: modelar como una coleccion separada",
-		"answer":true,
-		"explanation":null
-	},
-	{
-		"question":"tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, es indistinto de forma embebida o coleccion separada",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"si una interrelacion uno a muchos en un der tiene un atributo este se convierte en un atributo de la tabla del lado uno",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"el cumplimiento de una forma normal por parte de una relacion depende del cumplimiento o no de las FN por otras relaciones vinculadas de la misma base de datos",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"Un DDL (data definition language) provee un lenguaje para la formuilacion de consultas entre otras cosas",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"en un der una interrelacion muchos a muchos genera un atributo en la tabla que mas tuplas tiene y que es clave foranea hacia la clave principal que tiene menos registros",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave foranea",
-		"answer":false,
-		"explanation":null
-	},
-	{
-		"question":"si tengo una relacion de la forma EMPLEADO(legajo,nombre,apellido,telefono) donde un empleado puede tener mas de un telefono el atributo legajo es la clave principal y el atributo telefono es clave candidata",
-		"answer":false,
-		"explanation":null
-	}
+    {
+        "question": "Una relacion uno a muchos en un der da origen a una nueva tabla",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "En el analisis de las formas normales, cada relacion se analiza de manera separada del resto de relaciones",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Un DDL(data definition language) provee un lenguaje para la formulacion de consultas, entre otras cosas",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "en un der una interrelacion muchos a muchos genera un nuevo atributo en la tabla mas que tuplas tiene y que es clave foranea hacia la clave principal de la tabla que tiene menos registros",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Si tengo una relacion de la forma EMPLEADO(Legajo, Nombre, Apellido, Telefono) donde un empleado puede tener mas de un telefono el atributo 'legajo' es la clave principal y el atributo telefono es clave candidata",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Si una interrelacion uno a muchos tiene un atributo genera un atributo en la tabla del lado del muchos",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Las dependencias funcionales son un caso especial de las dependencias multivaluadas",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Un DDL(data definition language) provee un lenguaje para indicar los atributos de una tabla entre otras cosas",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "En un DER una interrelacion uno a uno de tipo 'es un' genera un nuevo campo o conjunto de campos en la tabla que tiene menor cantidad de registros y es una clave foranea que apunta a la clave de la tabla que tiene mayor cantidad de registros",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "La dependencia funciona X->Y es trivial si Y es un subconjunto de X (Y Incluido en X)",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Si tengo una relacion de la forma EMPLEADO(LEGAJO, DNI, NOMBRE, APELLIDO, TELEFONO) donde un empleado puede tener mas de un telefono, la clave principal es el conjunto de atributos ('legajo','telefono') y el conjunto ('dni','telefono') es la clave candidata",
+        "answer": true,
+        "explanation": "solo legajo no alcanza para definir el telefono",
+    },
+    {
+        "question": "las claves candidatas no necesariamente cumplen con la conficion de minimalidad",
+        "answer": false,
+        "explanation": "cumple con unicidad y minimalidad",
+    },
+    {
+        "question": "el conjunto de todas las tuplas posibles de una instancia de relacion es el resultado del producto cartesiano de todos los dominios de los atributos de la relacion",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Las dependencias funcionales determinan que algunas tuplas no son validas para el dominio del problema que las define",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "las dependencias funcionales junto con las dependencias multivaluadas se utilizan para determinas las claves principales y candidatas",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "el dominio de un atributo de una relacion puede ser un conjunto finito",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una clave candidata no cumple con el requisito de minimalidad como una clave principal o primaria",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "el analisis del cumplimiento de las formas normales se realiza por cada esquema de relacion independiente de los otros",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "la forma normal Boyce Codd es lo suficientemente generica para detectar todas las anomalías de actualización que pueden producirse",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "las formas normales son de cumplimiento obligatorio para un diseño correcto de una base de datos",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "un esquema indeseable no puede ser implementado en un SGBD",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "un DML no es estrictamente un lenguaje de computacion sino una forma de modelar el dominio del problema",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "cada tupla es una instancia de un esquema de relacion",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "las dependencias funcionales se definen en base al dominio del problema",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "cuando normalizo una relacion lo que hago es dividir la relacion para que cumpla con las formas normales",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "una relacion puede tener una o varias dependencias multivaluadas",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "implicacion de dependencias funcionales permite descomponer una dependencia funcional en varias para normalizar una relacion",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "la operacion de division del algebra relacional me permite determinar si todos los valores clave de una relacion son valor de un campo en otra relacion",
+        "answer": null,
+        "explanation": null,
+    },
+    {
+        "question": "si un esquema esta normalizado significa que no puede ser subdividido sin perdida de informacion",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "las claves se deducen a partir de las dependencias funcionales y las multivaluadads",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "a todos los atributos de una relacion se les puede definir un dominio",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "si una relacion no tiene dependencias funcionales ni de junta, no se le puede definir una clave principal",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una clave foranea siempre apunta a una clave de otra relacion",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "cuando encontramos un ciclo DER y determinamos que hay informacion redundante da lo mismo eliminar cualquier interrelacion que forma parte del ciclo para eliminar la redundancia",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "la clausura de F la utilizo para determinar la clave",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "si un conjunto de atributos me determina toda la relacion entonces es una clave",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "si en una relacion encuentro mas de una clave quiere decir que la relacion esta desnormalizada",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una dependencia fucional no trivial es la que tiene mas de un atributo del lado izquierdo",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "para guardar un arbol jerarquico de datos utilizo una relacion con una FK a si misma",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "nunca puedo permitir nulos en los atributos que constituyen una FK",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "nunca puedo permitir nulos en los atributos que constituyen una PK",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "nunca puedo permitir nulos en los atributos que constituyen una clave candidata",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "si una interrelacion uno a muchos en un DER tiene un atributo este se convierte en un atributo de la entidad del lado uno",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Una relacion uno a muchos en un der da origen a una nueva tabla",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "si una relacion cumple con la forma normal 3 necesariamente cumple con la forma normal 2",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Un DDL(data definition language) provee un lenguaje para eliminar un registro entre otras cosas",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "en un der una interrelacion uno a muchos genera una nueva tabla con dos campos o conjuntos de campos que son claves foraneas a cada una de las claves de ambas tablas",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "si tengo una relacion de la forma EMPLEADO(legajo, nombre, apellido, telefono) donde un empleado puede tener mas de un telefono la clave sera el conjunto ('legajo', 'telefono')",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "la inyeccion de sql (sql injection) puede producirse cuando las tablas tienen datos erroneos",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "la inyeccion de sql (sql injection) puede producirse cuando hay un mal diseño de la base de datos",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "la inyeccion de sql (sql injection) puede producirse cuando nse otorgan privilegios innecesarios a los usuarios",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "la inyeccion de sql (sql injection) puede producirse cuando no se controlan los ingresos de textos por parte de los usuarios finales",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "en un der una interrelacion uno a uno de tipo 'es un' genera un nuevo campo/s en la tabla que tiene mayor cantidad de registros y es una clave foranea que apunta a la clave de una tabla que tiene menor cantidad de registros",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una relacion uno a muchos surge del analisis del dominio del problema",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave foranea",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave candidata",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para generar el diccionario de datos",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para poder modificar la estructura de las tablas si lo necesito",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para realizar las operaciones de ingreso de datos",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para eliminar registros de una tabla",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para poder implementar el diseño de SGBD",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: en las tuplas donde se repitan los valores de X obligatoriamente se deben repetir los valores de Y para que exista dependencia funcional",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: que no deben existir valores repetidos de Y para que exista dependencia funcional",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: quiere decir que si el valor del atributo X en una tupla es igual al valor de X en otra tupla entonces deben ser siempre distintos valores de Y apra que exista dependencia funcional",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: que deben existir valores repetidos de X en distintas tuplas para que exista dependencia funcional",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: quiere decir que el valor del atributo X en una tupla tiene que ser siempre igual al valor de X en cualquier tupla y siempre distintos valores de Y para que exista dependencia funcional",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una transaccion se define en base al analisis del dominio del problema",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "una transaccion se define como un conjunto de operaciones que obligatoriamente deben ser recuperadas por el SGBD",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una transaccion es parte del diseño de la base de datos",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una transaccion se define al momento de la operacion y las implementa la aplicacion cliente",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "una transaccion se define como un conjunto de operaciones que no pueden fallar",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "La implicacion de las dependencias funcionales permiten identificar un esquema indeseable",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "La implicacion de las dependencias funcionales se utiliza para la determinacion de las claves de un esquema de relacion",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "La implicacion de las dependencias funcionales se puede determinar usando los axiomas de inferencia",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "La implicacion de las dependencias funcionales es la capacidad que tienen las DFs para poder deducir un nuevo conjunto de DFs a partir de un conjunto dado",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "La implicacion de las dependencias funcionales requiere que F(implicante) tenga mas de una DF",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Una clave no puede contener todos los atributos de una relacion",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "si un conjunto de atributos determina toda la relacion entonces ese conjunto es clave",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "las claves candidatas son aquellas que no cumplen con la condicion de minimalidad",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "el conjunto de todos los atributos siempre es clave",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "el cumpimiento de una forma normal por parte de una relacion es independiente del cumplimiento o no de las FN por otras relaciones vinculadas de la misma base de datos",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "Un DDL (data definition language) provee un lenguaje para crear un nuevo schema entre otras cosas",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "una interrelacion mucho a muchos genera una nueva tabla con dos atributos que son claves foraneas a cada una de las claves de ambas tablas",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "si tengo una relacion de la forma EMPLEADO(legajo, dni, nombre, apellido, telefono) donde un empleado puede tener mas de un telefono la clave principal es el conjunto de atributos ('legajo','telefono') y el conjunto ('dni','telefono') es clave candidata",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "dada la relacion PERSONA(dni,nombrepersona,apellidopersona,dnihijo) donde la persona puede tener mas de un hijo esta relacion cumple con la forma normal 2 y no con la forma normal 3",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "dada una relacion PERSONA(dni, dnihijodelapersona,profesiondelapersona) donde la persona puede tener mas de un hijo y una profesion. Esta relacion no cumple con la forma normal 2",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, conviene: modelar la relacion de forma embebida",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, conviene: modelar como una coleccion separada",
+        "answer": true,
+        "explanation": null,
+    },
+    {
+        "question": "tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, es indistinto de forma embebida o coleccion separada",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "si una interrelacion uno a muchos en un der tiene un atributo este se convierte en un atributo de la tabla del lado uno",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "el cumplimiento de una forma normal por parte de una relacion depende del cumplimiento o no de las FN por otras relaciones vinculadas de la misma base de datos",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "Un DDL (data definition language) provee un lenguaje para la formuilacion de consultas entre otras cosas",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "en un der una interrelacion muchos a muchos genera un atributo en la tabla que mas tuplas tiene y que es clave foranea hacia la clave principal que tiene menos registros",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave foranea",
+        "answer": false,
+        "explanation": null,
+    },
+    {
+        "question": "si tengo una relacion de la forma EMPLEADO(legajo,nombre,apellido,telefono) donde un empleado puede tener mas de un telefono el atributo legajo es la clave principal y el atributo telefono es clave candidata",
+        "answer": false,
+        "explanation": null,
+    },
 ]

@@ -3,7 +3,6 @@ import random
 
 
 class Questionnaire:
-
     def __init__(self) -> None:
         self._correct: list = []
         self._wrong: list = []
@@ -22,7 +21,7 @@ Now, a list of all wrong answers:
 """
         print(result)
         for n in self._wrong:
-            right_answer:str = f"""
+            right_answer: str = f"""
 Question: {n["question"]}
 Answer: {n["answer"]}
 Explanation: {n["explanation"]}
@@ -37,16 +36,14 @@ Explanation: {n["explanation"]}
         exam = int(input())
         while exam != 1 and exam != 2:
             exam = int(input())
-        
+
         if exam == 1:
             return "files/questions_parcial_1.json"
         else:
             return "files/questions_parcial_2.json"
 
-
     def _get_questions(self) -> None:
-
-        questionnaire:str = self._define_exam()
+        questionnaire: str = self._define_exam()
 
         with open(questionnaire, "r") as file:
             self._json_file: list = list(json.load(file))
@@ -54,7 +51,6 @@ Explanation: {n["explanation"]}
         self._total_questions: int = len(self._json_file)
 
     def _check_answer(self, answer: str) -> str:
-
         while answer != "y" and answer != "yes" and answer != "n" and answer != "no":
             print("WRONG ANSWER. MUST BE [y/n] or [yes/no]")
             answer = input().lower()
@@ -62,7 +58,6 @@ Explanation: {n["explanation"]}
         return answer
 
     def _get_answer(self) -> str:
-
         answer: str = input().lower()
 
         answer = self._check_answer(answer)
