@@ -1,0 +1,588 @@
+[
+    {
+        "question": "Un índice hash bitmap la pseudoclave es un número binario.",
+        "answer": true,
+        "explanation": "Porque es un hash bitmap"
+    },
+    {
+        "question": "Los predicados de junta pueden tener un operador que no sea de igualdad.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Los operadores de junta pueden tener un operador que no sea de igualdad.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "En una ejecución optimizada los predicados locales se ejecutan primero.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El uso del Left Join siempre produce filas con campos con valor null.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Las transacciones sólo pueden actuar sobre una tabla.",
+        "answer": false,
+        "explanation": "Las transacciones pueden abarcar múltiples tablas y realizar operaciones en varias de ellas de manera coherente y atómica."
+    },
+    {
+        "question": "Los predicados locales solo pueden ser comparaciones de igualdad.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "No hay conflicto cuando sobre un item una transacción quiere tomar un cierre de escritura y ya otra transacción tiene un cierre de lectura sobre el mismo ítem.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Hay un conflicto cuando sobre un item una transacción quiere tomar un cierre de lectura y ya otra transacción tiene un cierre de escritura sobre el mismo item.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Hay conflicto cuando sobre un item una transacción quiere tomar un cierre de escritura y ya otra transacción tiene un cierre de lectura sobre el mismo ítem.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "En una base de datos a los usuarios se les debe otorgar los mínimos privilegios necesarios para realizar las tareas que tienen autorizadas.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "En la definición del criterio de agrupamiento de la cláusula Group By de un select no se pueden poner llamadas a funciones, solo una lista de atributos.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Los índices tipo HASH son óptimos en consultas del tipo “...WHERE atributo =... “.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Cuando en un Select agrupo por Group By debo utilizar la lista de columnas que recupera solo definiciones de columnas que estén en la lista de agrupamiento, que sean dependientes funcionalmente de estas o sean funciones de agregación.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un predicado local es una expresión lógica que permite filtrar las tuplas de solo una tabla de las que participan de una consulta.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El operador de un JOIN siempre debe vincular tablas por una FK.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Un índice hash bitmap aumenta la profundidad del directorio cuando se completa cualquier frame.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Un índice hash bitmap aumenta la profundidad del directorio cuando se completa un frame de profundidad d' igual a d.",
+        "answer": false,
+        "explanation": "porque en realidad aumenta d ́"
+    },
+    {
+        "question": "Los predicados de junta solo pueden tener un operador de igualdad.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Los BTree son óptimos en consultas del tipo “ … WHERE monto > …”.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El SQL injection se mitiga usando consultas parametrizadas desde las aplicaciones cliente.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un predicado local es una expresión lógica que permite filtrar las tuplas que resultan en un join.",
+        "answer": false,
+        "explanation": "Eso lo hace el predicado de junta"
+    },
+    {
+        "question": "Los predicados de junta en una consulta optimizada se ejecutan antes que los predicados locales.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "En un índice hash bitmap la función hash genera un número binario a partir de la clave.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un índice hash bitmap utiliza buckets cuando se completa cualquier frame.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Los predicados de junta son expresiones lógicas que filtran las tuplas que resultan del producto cartesiano de dos tablas.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El operador de un join puede ser cualquier expresión lógica válida.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Las transacciones son lógicamente atómicas.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Una ejecución de dos o más transacciones concurrentes se denomina 'serializable' si la misma ejecuta las transacciones una después de la otra y no en forma entrelazada.",
+        "answer": false,
+        "explanation": "Idealmente, las transacciones deben ser serializables. Se dice que las transacciones son serializables si los resultados de ejecutar transacciones simultáneamente son los mismos que los resultados de ejecutarlas en serie, es decir, una tras otra. No es importante que la transacción se ejecute en primer lugar, solo que el resultado no refleja ninguna combinación de las transacciones."
+    },
+    {
+        "question": "Se dice que hay conflicto en la ejecución de dos transacciones concurrentes sobre un mismo ítem cuando una pide un bloqueo que la otra ya lo tiene y uno de los dos es un bloqueo de escritura.",
+        "answer": true,
+        "explanation": "Se dice que dos operaciones Ii e Ij de un plan S están en conflicto si operan sobre el mismo dato, pertenecen a transacciones distintas y al menos una de ellas es escritura."
+    },
+    {
+        "question": "En seguridad se deben dar a los usuarios los mínimos atributos necesarios para realizar sus tareas.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "En una consulta SQL Select con cláusula Group By no se deben poner en la selección atributos que no estén en el Group By o que no sean funcionalmente dependiente de estos.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "La optimización de una consulta intenta ejecutar en primera instancia los predicados de junta y luego los predicados locales.",
+        "answer": false,
+        "explanation": "Primero deben tenerse en cuenta los predicados locales y al último los de junta."
+    },
+    {
+        "question": "Un índice denso exige que los registros de la tabla apuntada estén ordenados.",
+        "answer": false,
+        "explanation": "En el índice denso, hay un registro de índice para cada valor clave de búsqueda en la base de datos. Por esto no es necesario el orden."
+    },
+    {
+        "question": "Un índice árbol B+ siempre está equilibrado.",
+        "answer": true,
+        "explanation": "El árbol b+ esta balanceado y el b es equilibrado"
+    },
+    {
+        "question": "La elección o no de usar o no un índice es independiente del estado de los datos y dependiente de las claves de ese índice.",
+        "answer": false,
+        "explanation": "La eleccion del índice depende del orden de los datos. En datos desordenados, no se puede usar un índice no denso, x ej."
+    },
+    {
+        "question": "La concurrencia se produce cada vez que dos usuarios acceden simultáneamente a la base de datos.",
+        "answer": false,
+        "explanation": "Simultáneamente a un dato"
+    },
+    {
+        "question": "Los locks se utilizan para lograr la serialización de la ejecución de dos transacciones concurrentes.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Una transacción puede quedar grabada a medias siempre y cuando las claves foráneas sean respetadas.",
+        "answer": false,
+        "explanation": "Grabar implica que se hizo un commit, es decir que queda grabada definitivamente en la base de datos."
+    },
+    {
+        "question": "Toda transacción puede ser serializada.",
+        "answer": false,
+        "explanation": "Existen no serializables. Cuando una depende del resultado de otra."
+    },
+    {
+        "question": "El recovery manager sirve para asegurar que todas las transacciones quedan correctamente grabadas y que son completamente ejecutadas.",
+        "answer": false,
+        "explanation": "Asegura el grabado en disco de aquellas que hayan finalizado (commiteado). Lo restante a grabar, es sacado de la lista Redo."
+    },
+    {
+        "question": "Una transacción puede encapsular una sola operación.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Toda operación sobre la BD es parte de una transacción.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El recovery manager vuelve la base al estado del último check point.",
+        "answer": true,
+        "explanation": "Usando el algoritmo undo-redo si una transacción no finalizó, se vuelve al comienzo de la misma, no al check point."
+    },
+    {
+        "question": "La cláusula Having del Select es un filtro que se aplica sobre el resultado de procesar la consulta definida en el From, en el Where y en el Group By si los hubiera.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Para poner una cláusula Having se requiere que haya un Group By.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "El uso del Left Outer Join siempre produce filas con campos con valor null.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Un Select no siempre devuelve una tabla, puede devolver un escalar.",
+        "answer": false,
+        "explanation": "Por más que sea un solo valor es una tabla también."
+    },
+    {
+        "question": "Una Subconsulta interna puede hacer referencia a tablas de la consulta externa.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Hay tipos de índices que funcionan mejor que otros según el estado de los datos.",
+        "answer": false,
+        "explanation": "La elección del índice depende del orden de los datos. En datos desordenados, no se puede usar un índice no denso, x ej."
+    },
+    {
+        "question": "El manejo de la concurrencia no debe permitir que una transacción acceda a los datos que necesite hasta que todas las otras transacciones que usan esos datos hayan finalizado.",
+        "answer": true,
+        "explanation": "Una transacción no puede leer ni escribir un ítem hasta tanto no ha obtenido un cierre sobre ese ítem. Una transacción que pide un cierre sobre un ítem que está tomado por otro cierre que está en conflicto con el existente debe esperar hasta que la primera transacción lo libere para poder tomarlo."
+    },
+    {
+        "question": "Un conflicto se produce siempre que una transacción quiere acceder a un dato y otra ya tiene un lock tomado sobre ese dato.",
+        "answer": false,
+        "explanation": "Si ambas transacciones solo quieren realizar lectura no hay conflicto"
+    },
+    {
+        "question": "La recuperación necesita sólo de los datos del log de transacciones para reconstruir un estado consistente de la base de datos.",
+        "answer": true,
+        "explanation": "Después del crash recupera todo desde el último check point."
+    },
+    {
+        "question": "El optimizador de consultas se basa en una estimación de los costos de los diferentes planes de ejecución y utiliza el de mínimo costo.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Sólo se pueden usar Subconsultas en la cláusula Where cuando no están afectadas por un tipo de join.",
+        "answer": false,
+        "explanation": "La Subconsulta devuelve una tabla, así que es lo mismo."
+    },
+    {
+        "question": "Las restricciones de fk son parte de la definición de la estructura de la base de datos.",
+        "answer": true,
+        "explanation": "las restricciones de fk y otros campos, suelen venir dadas por las reglas de negocio"
+    },
+    {
+        "question": "Una SGBD debe garantizar la calidad de los datos.",
+        "answer": false,
+        "explanation": "Si es relacional solamente es verdadero"
+    },
+    {
+        "question": "Las reglas de negocio no se pueden modelar usando Store Procedures.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Usar Store Procedure ayuda a mejorar la seguridad de la Base de Datos.",
+        "answer": true,
+        "explanation": "Evita errores de ingreso por usuario e inyección de código SQL."
+    },
+    {
+        "question": "Para poder definir una transacción todas las operaciones que la componen deben actuar sobre una la misma tabla.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "El supuesto de correctitud de la ejecución de una o más transacciones concurrentes establece que solo se pueden ejecutar las operaciones de modo serial o sea las transacciones una después de la otra y nunca de manera entrelazada.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Un índice B+ se caracteriza porque la cantidad de accesos que debo realizar para encontrar una clave es siempre la misma.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un índice no denso exige que las claves en el archivo destino estén ordenadas.",
+        "answer": true,
+        "explanation": "El no denso siempre ordenada en la tabla de destino."
+    },
+    {
+        "question": "costo (A |X| B) = costo (B |X| A).",
+        "answer": false,
+        "explanation": "No siempre es igual."
+    },
+    {
+        "question": "Una ejecución de dos o más transacciones concurrentes es serializable si produce el mismo resultado, estado de los datos, que una ejecución serial de esas mismas transacciones.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un índice de tipo hash-bitmap cuando completa una página debe usar buckets como listas enlazadas.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El uso de índices no genera ningún costo adicional en la performance general de la BD, solo mejora el tiempo de respuesta de las consultas.",
+        "answer": false,
+        "explanation": "Costo: costo de acceso al índice + costo de acceso a la relación"
+    },
+    {
+        "question": "Una transacción es un conjunto de operaciones donde obligatoriamente todas actúan sobre un mismo ítem.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Resolver la concurrencia de transacciones por el método de dos fases puede derivar en un dead lock.",
+        "answer": false,
+        "explanation": "El método de dos fases garantiza que no ocurra dead lock"
+    },
+    {
+        "question":"Explique (con sus palabras) cómo funciona el mecanismo de cierre de dos fases y porque. ",
+        "answer":null,
+        "explanation":"Se  utiliza  el  mecanismo  de  cierre  de  dos  fases  para  evitar el  interbloqueo,  para  esto, una transacción debe pedir los locks sobre los recursos y una vez que devuelve uno debe  devolver  todos,  no  puede  devolver  uno  y  pedir  otro,  pide  todos  seguidos  y después devuelve todos seguidos. "
+    },
+    {
+        "question": "El dominio de un atributo de una relación puede ser un conjunto finito.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Es posible utilizar una configuración donde un índice no denso indexe a un índice denso que a su vez indexe a un archivo tipo montículo",
+        "answer": true,
+        "explanation": "Porque los índices no densos se utilizan para indexar archivos ordenados como un índice denso, y los índices densos se utilizan para indexar archivos no ordenados como un tipo montículo."
+    },
+    {
+        "question": "El SQL-Injection es una falla de seguridad que afecta a las consultas construidas dinámicamente que incluyen datos ingresados por el usuario.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Las transacciones se pueden utilizar para mantener la integridad de los datos según el dominio del problema.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Cualquier predicado válido en la cláusula HAVING también es válido en la cláusula WHERE.",
+        "answer": false,
+        "explanation": "En having se pueden usar funciones de agregación. Where es un filtro y having un post filtro."
+    },
+    {
+        "question": "El comando ROLLBACK se ejecuta cuando deseo deshacer una transacción que aún no recibió un COMMIT.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "A una transacción que ya ejecutó el COMMIT le puedo hacer un ROLLBACK para que deshaga los cambios",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "La profundidad de un índice Bitmap establece la cantidad máxima de claves que puede tener la tabla sin tener que regenerarse.",
+        "answer": true,
+        "explanation": "Tal vez falsa, idk, así estaba en la respuesta"
+    },
+    {
+        "question": "La cláusula GROUP BY es obligatoria para toda consulta que utilice funciones de agregación como MAX, MIN, AVG, etc, en el SELECT.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "No se puede crear un índice por más de un atributo.",
+        "answer": false,
+        "explanation": "se llaman indices compuestos"
+    },
+    {
+        "question": "En un índice HASH se debe garantizar que las claves generadas por la función de hashing no se repitan.",
+        "answer": true,
+        "explanation": "sino se provocaria colision"
+    },
+    {
+        "question": "La optimización de Consultas busca identificar los planes menos costosos.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El comienzo y fin de una transacción lo determina el cliente de la base de datos según el dominio del problema.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "No puede existir una transacción que encapsule una sola transacción.",
+        "answer": true,
+        "explanation": "Son atómicas, no es divisible. No se puede iniciar una nueva transacción dentro de una transacción existente"
+    },
+    {
+        "question": "El manejo de la concurrencia no debe permitir que una transacción acceda a los datos que necesite hasta que todas las otras transacciones que tienen locks en conflicto sobre esos datos hayan finalizado.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "La concurrencia de transacciones se produce siempre cuando dos transacciones quieren acceder simultáneamente a una base de datos.",
+        "answer": false,
+        "explanation": "se produce cuando dos o más transacciones ejecutan acciones sobre algún ítem en común de la base de datos"
+    },
+    {
+        "question": "El método de Cierre en Dos Fases garantiza la serialización de la ejecución de dos o más transacciones concurrentes.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un archivo Heap se encuentra ordenado.",
+        "answer": false,
+        "explanation": "No tienen un orden específico"
+    },
+    {
+        "question": "Para optimizar la resolución de una consulta, el optimizador trata de resolver primero los predicados de junta antes que los predicados locales.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "En un indice tipo arbol B+ los nodos pueden tener cualquier cantidad de posiciones ocupadas.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Un indice tipo arbol B+ utiliza una funcion hash para almacenar las claves.",
+        "answer": false,
+        "explanation": "el indice se ordenan y almacenan en un arbol binario"
+    },
+    {
+        "question": "Todas las hojas de un indice arbol B+ tienen la misma profundidad",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El método de bloqueo de Dos Fases garantiza la serialización de las transacciones concurrentes.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un índice bitmap extensible utiliza una función hash que recibe la clave a buscar y devuelve la dirección de la página donde se encuentra el registro.",
+        "answer": false,
+        "explanation": "como su nombre lo dice usa una funcion de mapa de bits"
+    },
+    {
+        "question": "Un índice agrupado mantiene un registro de la dirección de las páginas que contienen los registros de todas las claves",
+        "answer": true,
+        "explanation": "Más bien, mantiene un registro de las páginas que contienen los registros ordenados según la clave de índice."
+    },
+    {
+        "question": "Si mientras se está ejecutando una transacción que aún no dio el commit se produce un fallo, la misma es reconstruida en al momento del check point.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Los predicados de juntas son expresiones lógicas que filtran las tuplas que resultan del producto cartesiano de dos tablas.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Los predicados de junta dan como resultado una nueva relación con los atributos de las 2 tablas y las tuplas que satisfacen el predicado",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El uso de Left Outer Join es una junta que produce siempre una tabla con la misma cantidad de registros de la tabla izquierda.",
+        "answer": false,
+        "explanation": "Es una tabla que trae todo los registros del lado izquierdo independientemente si hay coincidencia con el lado derecho. (trae lo cant reg izquierda como derecha)"
+    },
+    {
+        "question": "Los predicados de junta se les llama también predicados locales.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Se puede formular una instrucción SELECT que no tenga la cláusula FROM.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Hay conflicto cuando sobre un item una transacción quiere tomar un cierre de escritura y ya otra transacción tiene un cierre de escritura sobre el mismo ítem.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Toda condicion que funciona en un WHERE funciona tambien en un HAVING.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question":"En que formato almacena MongoDB las Colecciones.",
+        "answer":null,
+        "explanation":"BSON"
+
+    },
+    {
+        "question": "En una ejecucion optimizada los predicados locales se ejecutan al ultimo.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Al definir una tabla en MySQL seleccionado un conjunto de caracteres puede elegir entre varias colaciones.",
+        "answer": true,
+        "explanation": "SON COLLATE (CAMBIAR IDIOMAS)"
+    },
+    {
+        "question": "La clausula having solo se puede aplicar si existe la clausula group by.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "En la definición del criterio de agrupamiento de la cláusula Group By de un select se pueden poner llamadas a funciones tanto como atributos simples",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El mantenimiento de un indice sobre una tabla tiene un costo inicial al ser creado y ninguno en las operaciones sobre la base de datos.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "NO se pueden usar schemas en MongoDB.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Los predicados locales solo pueden ser comparaciones de igualdad.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "El uso del Left Join es una junta que produce siempre una tabla con la misma cantidad de registros de la tabla izquierda.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Si dos o mas transacciones acceden sobre un mismo item o items simultáneamente se dice que son concurrentes.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "En mongoDB se admiten las transacciones ACID.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Es importante crear la mayor cantidad de Indices con la intención de mejorar el rendimiento de la Base de Datos ya que no tiene costo alguno.",
+        "answer": false,
+        "explanation": null
+    },
+    {
+        "question": "Una ejecución serializada entrelazada de dos o mas transacciones es aquella que da resultado igual si se ejecutaran de manera no entrelazada.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question":"Si estamos desarrollando un nuevo producto en una Startup con muchos cambios de requerimientos y muchas features, que SGBD recomiendas?.",
+        "answer":null,
+        "explanation": "MongoDB"
+    }   
+]
