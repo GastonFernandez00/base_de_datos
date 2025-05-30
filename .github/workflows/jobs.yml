@@ -20,8 +20,11 @@ jobs:
 
   cspell-check:
     runs-on: ubuntu-latest
+    container:
+      image: node:22
     steps:
       - uses: actions/checkout@v3
-      - name: Run cspell via Docker
+      - name: Install cspell and run it
         run: |
-          docker run --rm -v "$PWD":/app ghcr.io/streetsidesoftware/cspell:latest -c cspell.json --file src/*.py
+          npm install -g cspell
+          cspell -c cspell.json --file src/*.py
