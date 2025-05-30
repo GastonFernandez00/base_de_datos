@@ -2,26 +2,26 @@ name: checker
 on: [push]
 
 jobs:
-    ruff-check:
-        runs-on: ubuntu:latest
-        steps:
-            - run:
-                apt update
-                apt install -y python3 python3-venv
-                python3 -m .venv venv
-                source .venv/bin/activate
-                pip install ruff
-                ruff check
-                ruff format --check
+  ruff-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install Ruff
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install ruff
+          ruff check
+          ruff format --check
 
-    cspell-check:
-        runs-on: node:22
-        steps:
-            - run:
-                docker run --rm -v "$PWD":/app cspell -c cspell.json --file src/*.py
-
-
-
-    
-
-
+  cspell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run cspell via Docker
+        run: |
+          docker run --rm -v "$PWD":/app ghcr.io/streetsidesoftware/cspell:latest -c cspell.json --file src/*.py
