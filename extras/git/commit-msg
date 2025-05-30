@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+echo -e "\n------------------------------\n"
+echo -e "Running commit message checker"
+echo -e "\n------------------------------\n"
+
+# Regex: Must start with "ISSUE-" followed by one or more digits and finish with ':'
+PATTERN="^ISSUE-\d+:"
+
+# Read commit message from file
+COMMIT_MSG_FILE="$1"
+COMMIT_MSG=$(head -n1 "$COMMIT_MSG_FILE")
+
+if ! echo "$COMMIT_MSG" | grep -qP "$PATTERN"; then
+  echo "  Commit message must start with 'ISSUE-<number>'. "
+  echo "  Example: ISSUE-1234: Fix broken link. "
+  exit 1
+fi

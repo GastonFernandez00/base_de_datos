@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+# Get current branch name
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+
+echo -e "\n------------------------------\n"
+echo -e "Running branch naming checker"
+echo -e "\n------------------------------\n"
+
+# Regex: Must start with "ISSUE-" followed by one or more digits.'
+PATTERN="^(?:fix|feature)\/ISSUE-\d+"
+
+if ! echo "$BRANCH_NAME" | grep -qP "$PATTERN"; then
+  echo "Branch name must start with 'fix or feature, followed by /ISSUE-<number>' (e.g.,fix/ISSUE-1234-here-is-a-branch)"
+  echo "Current branch: $BRANCH_NAME"
+  exit 1
+fi
+
+echo -e "Everything alright!"
