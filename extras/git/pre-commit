@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+echo -e "\n------------------------------\n"
+echo -e "Running spell checkers"
+echo -e "\n------------------------------\n"
+docker run --rm -v "$PWD":/app cspell -c cspell.json --file src/*.py
+docker run --rm -v "$PWD":/app cspell -c cspell.json --file README.md
+
+
+echo -e "\n------------------------------\n"
+echo -e "Running ruff checker"
+echo -e "\n------------------------------\n"
+ruff format --check
+ruff check
