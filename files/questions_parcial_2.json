@@ -216,7 +216,7 @@
     },
     {
         "question": "El recovery manager vuelve la base al estado del último check point.",
-        "answer": true,
+        "answer": false,
         "explanation": "Usando el algoritmo undo-redo si una transacción no finalizó, se vuelve al comienzo de la misma, no al check point."
     },
     {
@@ -340,14 +340,9 @@
         "explanation": null
     },
     {
-        "question": "Resolver la concurrencia de transacciones por el método de dos fases puede derivar en un dead lock.",
-        "answer": false,
-        "explanation": "El método de dos fases garantiza que no ocurra dead lock"
-    },
-    {
-        "question":"Explique (con sus palabras) cómo funciona el mecanismo de cierre de dos fases y porque. ",
-        "answer":null,
-        "explanation":"Se  utiliza  el  mecanismo  de  cierre  de  dos  fases  para  evitar el  interbloqueo,  para  esto, una transacción debe pedir los locks sobre los recursos y una vez que devuelve uno debe  devolver  todos,  no  puede  devolver  uno  y  pedir  otro,  pide  todos  seguidos  y después devuelve todos seguidos. "
+        "question": "Explique (con sus palabras) cómo funciona el mecanismo de cierre de dos fases y porque. ",
+        "answer": null,
+        "explanation": "Se utiliza el mecanismo de cierre de dos fases para evitar el interbloqueo, para esto, una transacción debe pedir los locks sobre los recursos y una vez que devuelve uno debe devolver todos, no puede devolver uno y pedir otro, pide todos seguidos y después devuelve todos seguidos."
     },
     {
         "question": "El dominio de un atributo de una relación puede ser un conjunto finito.",
@@ -515,10 +510,9 @@
         "explanation": null
     },
     {
-        "question":"En que formato almacena MongoDB las Colecciones.",
-        "answer":null,
-        "explanation":"BSON"
-
+        "question": "En que formato almacena MongoDB las Colecciones.",
+        "answer": null,
+        "explanation": "BSON"
     },
     {
         "question": "En una ejecucion optimizada los predicados locales se ejecutan al ultimo.",
@@ -581,8 +575,98 @@
         "explanation": null
     },
     {
-        "question":"Si estamos desarrollando un nuevo producto en una Startup con muchos cambios de requerimientos y muchas features, que SGBD recomiendas?.",
-        "answer":null,
+        "question": "Si estamos desarrollando un nuevo producto en una Startup con muchos cambios de requerimientos y muchas features, que SGBD recomiendas?.",
+        "answer": null,
         "explanation": "MongoDB"
-    }   
+    },
+    {
+        "question": "El sql injection se produce cuando en un código cliente con acceso a una base de datos se concatenan cadenas con datos de fuentes externas no confiables",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "Un DDL (Data Definition Language) provee un lenguaje para la formulación de consultas entre otras cosas.",
+        "answer": false,
+        "explanation": "Quien provee un lenguaje para formulación de consultas en el DML"
+    },
+    {
+        "question": "Las claves candidatas de una relación cumplen con las mismas condiciones que la clave principal.",
+        "answer": true,
+        "explanation": "Sea Cc = {CC1, CC2,...,CCn} conjunto de claves candidatas. Se define a la clave principal PK = CCn pertenece a Cc."
+    },
+    {
+        "question": "En un diagrama DER una interrelación muchos a muchos, al momento de transformarse a un diseño de esquemas de la relación, genera un tercer esquema de relación con claves foráneas apuntando a ambas de las dos entidades vinculadas",
+        "answer": true,
+        "explanation": "El nuevo esquema de relación puede o no contener una PK propia. No obstante debe de contener un vínculo con las tablas que relaciona, siendo este las FKs que apuntan a las PKs de las tablas que relaciona."
+    },
+    {
+        "question": "Un DML (Data Management Language) provee un lenguaje para la formulación de consultas entre otras cosas.",
+        "answer": true,
+        "explanation": "Lenguaje de Manipulación de Datos (Data Manipulation Language, DML) es un lenguaje proporcionado por los sistemas gestores de bases de datos que permite a los usuarios de la misma llevar a cabo las tareas de consulta o modificación de los datos contenidos en las Bases de Datos del SGBD."
+    },
+    {
+        "question": "Para que un conjunto de atributos sea una clave candidata no debe cumplir con la condición de minimalidad como la clave principal.",
+        "answer": false,
+        "explanation": "Las claves candidatas son un conjunto de claves que en potencia pueden ser seleccionadas como clave principal. Por tanto deben de cumplir con el criterio de minimalidad."
+    },
+    {
+        "question": "En un diagrama DER una interrelación uno a muchos al momento de transformarse a un diseño de esquemas de relación genera un tercer esquema de relación con claves foráneas apuntando a ambas de las dos entidades vinculadas",
+        "answer": false,
+        "explanation": "La relación que genera un tercer esquema de relación es una interrelación muchos a muchos. En un esquema uno a muchos, la clave foránea se encuentra en la tabla de muchos, apuntando a la clave principal de la otra tabla."
+    },
+    {
+        "question": "Resolver la concurrencia de transacciones por el método de dos fases puede derivar en un dead lock.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question": "El análisis del cumplimiento de las formas normales se realiza por cada esquina de relación independiente de los otros.",
+        "answer": true,
+        "explanation": null
+    },
+    {
+        "question":"La forma normal de Boyce Codd es lo suficientemente genérica para detectar todas las anomalías de actualización que pueden producirse",
+        "answer":true,
+        "explanation":null
+    },
+    {
+        "question":"Las formas normales son de cumplimiento obligatorio para un diseño correcto de una Base de Datos",
+        "answer":false,
+        "explanation":"La única forma normal obligatoria es la 1FN que determina la no existencia de atributos no atómicos y multivaluados. Las restantes formas normales permiten ir reduciendo la redundancia de los datos. El aumento en la normalización debe garantizar siempre la no pérdida de la información y de las dependencias funcionales."
+    },
+    {
+        "question":"Para que un esquema de relación se encuentre en 3ra forma Normal no debe existir una dependencia funcional no trivial que no tenga como lado izquierdo una clave candidata.",
+        "answer":false,
+        "explanation":"porque esa es la definición de la Forma Normal de Boyce Code que abarca mayor cantidad de casos."
+    },
+    {
+        "question":"Es posible utilizar una configuración donde un índice no denso indexe a un índice denso que a su vez indexe a un archivo tipo montículo",
+        "answer":true,
+        "explanation":"Porque los índices no densos se utilizan para indexar archivos ordenados como un índice denso, y los índices densos se utilizan para indexar archivos no ordenados como un tipo montículo."
+    },
+    {
+        "question":"El dominio de un atributo siempre es un conjunto finito.",
+        "answer":false,
+        "explanation":"Porque Un dominio puede ser un conjunto infinito por ejemplo el dominio de los números reales."
+    },
+    {
+        "question":"Una dependencia funcional no trivial es aquella que tiene del lado izquierdo una clave candidata",
+        "answer":false,
+        "explanation":null
+    },
+    {
+        "question":"Un esquema de relación es el conjuntos de los atributo de la relación.",
+        "answer":true,
+        "explanation": null
+    },
+    {
+        "question":"Es condición necesaria para que un esquema de relación esté en FNBC que todas las DFs no tengan atributos no clave que dependan de parte de la clave",
+        "answer":true,
+        "explanation":null
+    },
+    {
+        "question":"Una interrelación uno a muchos genera un atributo clave foránea en la relación del lado del uno que apunta al lado de muchos.",
+        "answer":false,
+        "explanation":"Es al reves"
+    }
 ]
