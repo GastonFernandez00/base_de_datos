@@ -58,7 +58,7 @@ Explanation: {n["explanation"]}
             answer not in permitted_true_answers
             and answer not in permitted_false_answers
         ):
-            print("WRONG ANSWER. MUST BE [ yes | y | 1 | + ] or [ no | n | 0 | - ]")
+            print("INVALID INPUT. MUST BE [ yes | y | 1 | + ] or [ no | n | 0 | - ]")
             answer = input().lower()
 
         return "yes" if answer in permitted_true_answers else "no"
@@ -77,7 +77,7 @@ Explanation: {n["explanation"]}
         while len(self._json_file) > 0:
             question: str = f"""
 Question[{counter}/{self._total_questions}]: {self._json_file[-1]["question"]}
-Your answer: [ yes | y | 1 | + ] or [ no | n | 0 | - ]"""
+Your answer: """
 
             print(question)
             answer: str = self._get_answer()
@@ -95,4 +95,5 @@ Your answer: [ yes | y | 1 | + ] or [ no | n | 0 | - ]"""
 
 
 if __name__ == "__main__":
+    print("Question must be answered in this format: [ yes | y | 1 | + ] or [ no | n | 0 | - ]")
     x = Questionnaire()
