@@ -51,20 +51,24 @@ Explanation: {n["explanation"]}
         self._total_questions: int = len(self._json_file)
 
     def _check_answer(self, answer: str) -> str:
-        permitted_answers: list[str] = ["yes", "y", "1", "+", "no", "n", "0", "-"]
+        permitted_true_answers: list[str] = ["yes", "y", "1", "+"]
+        permitted_false_answers: list[str] = ["no", "n", "0", "-"]
 
-        while answer not in permitted_answers:
+        while (
+            answer not in permitted_true_answers
+            and answer not in permitted_false_answers
+        ):
             print("WRONG ANSWER. MUST BE [ yes | y | 1 | + ] or [ no | n | 0 | - ]")
             answer = input().lower()
 
-        return answer
+        return "yes" if answer in permitted_true_answers else "no"
 
     def _get_answer(self) -> str:
         answer: str = input().lower()
 
         answer = self._check_answer(answer)
 
-        answer = True if answer == "y" or answer == "yes" else False
+        answer = True if answer == "yes" else False
 
         return answer
 

@@ -626,7 +626,7 @@
     },
     {
         "question":"La forma normal de Boyce Codd es lo suficientemente genérica para detectar todas las anomalías de actualización que pueden producirse",
-        "answer":true,
+        "answer":false,
         "explanation":null
     },
     {
