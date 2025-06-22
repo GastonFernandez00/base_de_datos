@@ -26,7 +26,7 @@ Question: {n["question"]}
 Answer: {n["answer"]}
 Explanation: {n["explanation"]}
 """
-            print(f"{right_answer} \n---------------------------------n")
+            print(f"{right_answer} \n---------------------------------")
 
     def _randomize_order(self):
         random.shuffle(self._json_file)

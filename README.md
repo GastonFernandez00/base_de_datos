@@ -9,7 +9,7 @@
 
 - Run the program from the root directory.
     ```bash
-    python -u src/questionnaire.py
+    python3 -u src/questionnaire.py
     ```
 
 ## Description of Directories.
