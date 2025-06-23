@@ -95,5 +95,7 @@ Your answer: """
 
 
 if __name__ == "__main__":
-    print("Question must be answered in this format: [ yes | y | 1 | + ] or [ no | n | 0 | - ]")
+    print(
+        "Question must be answered in this format: [ yes | y | 1 | + ] or [ no | n | 0 | - ]"
+    )
     x = Questionnaire()

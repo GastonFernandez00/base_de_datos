@@ -113,7 +113,7 @@
 
 	},
 	{
-		"question":"la forma normal Boyce Codd es lo suficientemente generica para detectar todas las anomalías de actualización que pueden producirse",
+		"question":"la forma normal Boyce Codd es lo suficientemente generica para detectar todas las anomalias de actualizacion que pueden producirse",
 		"answer":false,
 		"explanation":null
 
