@@ -168,7 +168,7 @@
 	},
 	{
 		"question":"la operacion de division del algebra relacional me permite determinar si todos los valores clave de una relacion son valor de un campo en otra relacion",
-		"answer":false,
+		"answer":null,
 		"explanation":null
 
 	},
