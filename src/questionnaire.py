@@ -4,6 +4,8 @@ import random
 
 class Questionnaire:
     def __init__(self) -> None:
+        self.permitted_true_answers: list[str] = ["yes", "y", "1", "+", "true", "t"]
+        self.permitted_false_answers: list[str] = ["no", "n", "0", "-", "false", "f"]
         self._correct: list = []
         self._wrong: list = []
         self._get_questions()
@@ -51,17 +53,16 @@ Explanation: {n["explanation"]}
         self._total_questions: int = len(self._json_file)
 
     def _check_answer(self, answer: str) -> str:
-        permitted_true_answers: list[str] = ["yes", "y", "1", "+", "true", "t"]
-        permitted_false_answers: list[str] = ["no", "n", "0", "-", "false", "f"]
-
         while (
-            answer not in permitted_true_answers
-            and answer not in permitted_false_answers
+            answer not in self.permitted_true_answers
+            and answer not in self.permitted_false_answers
         ):
-            print("INVALID INPUT. MUST BE [ yes | y | 1 | + ] or [ no | n | 0 | - ]")
+            print(
+                f"INVALID INPUT. MUST BE [{' | '.join(self.permitted_true_answers)}] or [{' | '.join(self.permitted_false_answers)}]"
+            )
             answer = input().lower()
 
-        return "yes" if answer in permitted_true_answers else "no"
+        return "yes" if answer in self.permitted_true_answers else "no"
 
     def _get_answer(self) -> str:
         answer: str = input().lower()
@@ -73,6 +74,10 @@ Explanation: {n["explanation"]}
         return answer
 
     def _start(self) -> None:
+        print(
+            f"Question must be answered in this format: [{' | '.join(self.permitted_true_answers)}] or [{' | '.join(self.permitted_false_answers)}]"
+        )
+
         counter: int = 1
         while len(self._json_file) > 0:
             question: str = f"""
@@ -95,7 +100,4 @@ Your answer: """
 
 
 if __name__ == "__main__":
-    print(
-        "Question must be answered in this format: [ yes | y | 1 | + ] or [ no | n | 0 | - ]"
-    )
     x = Questionnaire()
