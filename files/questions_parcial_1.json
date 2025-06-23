@@ -1,8 +1,8 @@
 [
 	{
-		"question": "Una relación uno a muchos en un DER da origen a una nueva tabla",
+		"question": "Una relacion uno a muchos en un DER da origen a una nueva tabla",
 		"answer": false,
-		"explanation": "Una relación 1:N se implementa añadiendo una clave foránea en la tabla del lado 'muchos', no creando una nueva tabla."
+		"explanation": "Una relacion 1:N se implementa añadiendo una clave foranea en la tabla del lado 'muchos', no creando una nueva tabla."
 	},
 	{
 		"question":"En el analisis de las formas normales, cada relacion se analiza de manera separada del resto de relaciones",
@@ -13,13 +13,13 @@
 	{
 		"question":"Un DDL(data definition language) provee un lenguaje para la formulacion de consultas, entre otras cosas",
 		"answer":false,
-		"explanation": "El DDL se usa para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP). La formulación de consultas se realiza con el DQL (Data Query Language), principalmente con el comando SELECT."
+		"explanation": "El DDL se usa para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP). La formulacion de consultas se realiza con el DQL (Data Query Language), principalmente con el comando SELECT."
 
 	},
 	{
 		"question":"en un der una interrelacion muchos a muchos genera un nuevo atributo en la tabla mas que tuplas tiene y que es clave foranea hacia la clave principal de la tabla que tiene menos registros",
 		"answer":false,
-		"explanation": "Una relación muchos a muchos se resuelve creando una nueva tabla intermedia que contiene claves foráneas a las claves primarias de ambas tablas originales, no añadiendo un atributo a una de las tablas existentes."
+		"explanation": "Una relacion muchos a muchos se resuelve creando una nueva tabla intermedia que contiene claves foraneas a las claves primarias de ambas tablas originales, no añadiendo un atributo a una de las tablas existentes."
 
 	},
 	{
@@ -31,7 +31,7 @@
 	{
 		"question":"Si tengo una relacion de la forma EMPLEADO(Legajo, Nombre, Apellido, Telefono) donde un empleado puede tener mas de un telefono el atributo 'legajo' es la clave principal y el atributo telefono es clave candidata",
 		"answer":false,
-		"explanation": "Si un empleado puede tener múltiples teléfonos, la tabla no estaría en 1FN. El atributo 'Telefono' no puede ser clave candidata porque sus valores no serían únicos (un mismo 'Telefono' no identifica unívocamente a un empleado si este tiene varios, y un 'Legajo' se repetiría con diferentes teléfonos), y no determinaría al resto de atributos."
+		"explanation": "Si un empleado puede tener multiples telefonos, la tabla no estaria en 1FN. El atributo 'Telefono' no puede ser clave candidata porque sus valores no serian unicos (un mismo 'Telefono' no identifica univocamente a un empleado si este tiene varios, y un 'Legajo' se repetiria con diferentes telefonos), y no determinaria al resto de atributos."
 
 	},
 	{
@@ -73,7 +73,7 @@
 	{
 		"question":"las claves candidatas no necesariamente cumplen con la condicion de minimalidad",
 		"answer":false,
-		"explanation":"La minimalidad es una condición fundamental y definitoria de una clave candidata."
+		"explanation":"La minimalidad es una condicion fundamental y definitoria de una clave candidata."
 
 	},
 	{
@@ -103,7 +103,7 @@
 	{
 		"question":"una clave candidata no cumple con el requisito de minimalidad como una clave principal o primaria",
 		"answer":false,
-		"explanation": "La minimalidad es una condición fundamental y definitoria de una clave candidata."
+		"explanation": "La minimalidad es una condicion fundamental y definitoria de una clave candidata."
 
 	},
 	{
@@ -113,27 +113,27 @@
 
 	},
 	{
-		"question":"la forma normal Boyce Codd es lo suficientemente generica para detectar todas las anomalías de actualización que pueden producirse",
+		"question":"la forma normal Boyce Codd es lo suficientemente generica para detectar todas las anomalias de actualizacion que pueden producirse",
 		"answer":false,
-		"explanation": "Aunque BCNF es muy estricta y elimina la mayoría de las anomalías basadas en dependencias funcionales, no detecta ni aborda anomalías que surgen de otros tipos de dependencias (como las dependencias de multivalor) o casos donde la descomposición para BCNF no conserva todas las dependencias funcionales. No es 'todas' las anomalías posibles."
+		"explanation": "Aunque BCNF es muy estricta y elimina la mayoria de las anomalias basadas en dependencias funcionales, no detecta ni aborda anomalias que surgen de otros tipos de dependencias (como las dependencias de multivalor) o casos donde la descomposicion para BCNF no conserva todas las dependencias funcionales. No es 'todas' las anomalias posibles."
 
 	},
 	{
 		"question":"las formas normales son de cumplimiento obligatorio para un diseño correcto de una base de datos",
 		"answer":false,
-		"explanation": "Aunque las formas normales son pautas muy recomendables para reducir redundancia y anomalías, no son de cumplimiento obligatorio."
+		"explanation": "Aunque las formas normales son pautas muy recomendables para reducir redundancia y anomalias, no son de cumplimiento obligatorio."
 
 	},
 	{
 		"question":"un esquema indeseable no puede ser implementado en un SGBD",
 		"answer":false,
-		"explanation": "Un SGBD permite la creación de esquemas que no cumplen con las formas normales o que tienen un diseño deficiente."
+		"explanation": "Un SGBD permite la creacion de esquemas que no cumplen con las formas normales o que tienen un diseño deficiente."
 
 	},
 	{
 		"question":"un DML no es estrictamente un lenguaje de computacion sino una forma de modelar el dominio del problema",
 		"answer":false,
-		"explanation": "Un DML (Data Manipulation Language) es un lenguaje de computación (ej. SELECT, INSERT, UPDATE, DELETE) que se utiliza para manipular datos en una base de datos. El modelado del dominio del problema se realiza con herramientas conceptuales y lógicas como los Diagramas Entidad-Relación (DER), no con DML."
+		"explanation": "Un DML (Data Manipulation Language) es un lenguaje de computacion (ej. SELECT, INSERT, UPDATE, DELETE) que se utiliza para manipular datos en una base de datos. El modelado del dominio del problema se realiza con herramientas conceptuales y logicas como los Diagramas Entidad-Relacion (DER), no con DML."
 
 	},
 	{
@@ -169,7 +169,7 @@
 	{
 		"question":"la operacion de division del algebra relacional me permite determinar si todos los valores clave de una relacion son valor de un campo en otra relacion",
 		"answer":false,
-		"explanation":"sabrá Dios"
+		"explanation":"sabra Dios"
 
 	},
 	{
@@ -181,7 +181,7 @@
 	{
 		"question":"las claves se deducen a partir de las dependencias funcionales y las multivaluadads",
 		"answer":false,
-		"explanation": "Las claves candidatas se deducen principalmente a partir de las dependencias funcionales (DFs), que definen qué atributos determinan a otros. Las dependencias multivalor (DMV) se utilizan para la normalización a 4FN"
+		"explanation": "Las claves candidatas se deducen principalmente a partir de las dependencias funcionales (DFs), que definen que atributos determinan a otros. Las dependencias multivalor (DMV) se utilizan para la normalizacion a 4FN"
 
 	},
 	{
@@ -193,7 +193,7 @@
 	{
 		"question":"si una relacion no tiene dependencias funcionales ni de junta, no se le puede definir una clave principal",
 		"answer":false,
-		"explanation": "Toda relación en el modelo relacional debe tener una clave principal para garantizar la unicidad de sus tuplas, que es una propiedad fundamental de los conjuntos. Las dependencias funcionales y de unión se utilizan para analizar la redundancia y normalizar la relación, pero no determinan si una clave principal puede ser definida. Si no hay dependencias, la clave principal puede ser el conjunto completo de atributos de la relación."
+		"explanation": "Toda relacion en el modelo relacional debe tener una clave principal para garantizar la unicidad de sus tuplas, que es una propiedad fundamental de los conjuntos. Las dependencias funcionales y de union se utilizan para analizar la redundancia y normalizar la relacion, pero no determinan si una clave principal puede ser definida. Si no hay dependencias, la clave principal puede ser el conjunto completo de atributos de la relacion."
 
 	},
 	{
@@ -205,7 +205,7 @@
 	{
 		"question":"cuando encontramos un ciclo DER y determinamos que hay informacion redundante da lo mismo eliminar cualquier interrelacion que forma parte del ciclo para eliminar la redundancia",
 		"answer":false,
-		"explanation": "No, no da lo mismo. Para eliminar la redundancia en un ciclo DER, es crucial identificar cuál interrelación es realmente derivable o inferible a partir de las otras, basándose en las dependencias funcionales y la semántica del negocio."
+		"explanation": "No, no da lo mismo. Para eliminar la redundancia en un ciclo DER, es crucial identificar cual interrelacion es realmente derivable o inferible a partir de las otras, basandose en las dependencias funcionales y la semantica del negocio."
 
 	},
 	{
@@ -223,7 +223,7 @@
 	{
 		"question":"si en una relacion encuentro mas de una clave quiere decir que la relacion esta desnormalizada",
 		"answer":false,
-		"explanation": "Encontrar más de una clave candidata en una relación es normal y no implica desnormalización."
+		"explanation": "Encontrar mas de una clave candidata en una relacion es normal y no implica desnormalizacion."
 
 	},
 	{
@@ -265,7 +265,7 @@
 	{
 		"question":"Una relacion uno a muchos en un der da origen a una nueva tabla",
 		"answer":false,
-		"explanation": "Una relación 1:N se implementa añadiendo una clave foránea en la tabla del lado 'muchos', no creando una nueva tabla."
+		"explanation": "Una relacion 1:N se implementa añadiendo una clave foranea en la tabla del lado 'muchos', no creando una nueva tabla."
 
 	},
 	{
@@ -277,13 +277,13 @@
 	{
 		"question":"Un DDL(data definition language) provee un lenguaje para eliminar un registro entre otras cosas",
 		"answer":false,
-		"explanation": "El DDL se usa para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP de objetos completos). La eliminación de un registro (fila) específico es una operación de manipulación de datos, realizada por el DML con el comando DELETE."
+		"explanation": "El DDL se usa para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP de objetos completos). La eliminacion de un registro (fila) especifico es una operacion de manipulacion de datos, realizada por el DML con el comando DELETE."
 
 	},
 	{
 		"question":"en un der una interrelacion uno a muchos genera una nueva tabla con dos campos o conjuntos de campos que son claves foraneas a cada una de las claves de ambas tablas",
 		"answer":false,
-		"explanation": "Una relación uno a muchos (1:N) se implementa añadiendo una única clave foránea en la tabla del lado 'muchos' que referencia a la clave primaria de la tabla del lado 'uno'."
+		"explanation": "Una relacion uno a muchos (1:N) se implementa añadiendo una unica clave foranea en la tabla del lado 'muchos' que referencia a la clave primaria de la tabla del lado 'uno'."
 
 	},
 	{
@@ -301,19 +301,19 @@
 	{
 		"question":"la inyeccion de sql (sql injection) puede producirse cuando las tablas tienen datos erroneos",
 		"answer":false,
-		"explanation": "La inyección SQL es una vulnerabilidad de seguridad causada por la falta de validación de la entrada del usuario y la construcción insegura de consultas SQL, permitiendo que código malicioso sea ejecutado."
+		"explanation": "La inyeccion SQL es una vulnerabilidad de seguridad causada por la falta de validacion de la entrada del usuario y la construccion insegura de consultas SQL, permitiendo que codigo malicioso sea ejecutado."
 
 	},
 	{
 		"question":"la inyeccion de sql (sql injection) puede producirse cuando hay un mal diseño de la base de datos",
 		"answer":false,
-		"explanation": "La inyección SQL es una vulnerabilidad de seguridad causada por la falta de validación de la entrada del usuario y la construcción insegura de consultas SQL, permitiendo que código malicioso sea ejecutado."
+		"explanation": "La inyeccion SQL es una vulnerabilidad de seguridad causada por la falta de validacion de la entrada del usuario y la construccion insegura de consultas SQL, permitiendo que codigo malicioso sea ejecutado."
 
 	},
 	{
 		"question":"la inyeccion de sql (sql injection) puede producirse cuando se otorgan privilegios innecesarios a los usuarios",
 		"answer":false,
-		"explanation": "La inyección SQL es una vulnerabilidad de seguridad causada por la falta de validación de la entrada del usuario y la construcción insegura de consultas SQL, permitiendo que código malicioso sea ejecutado."
+		"explanation": "La inyeccion SQL es una vulnerabilidad de seguridad causada por la falta de validacion de la entrada del usuario y la construccion insegura de consultas SQL, permitiendo que codigo malicioso sea ejecutado."
 
 	},
 	{
@@ -325,7 +325,7 @@
 	{
 		"question":"en un der una interrelacion uno a uno de tipo 'es un' genera un nuevo campo/s en la tabla que tiene mayor cantidad de registros y es una clave foranea que apunta a la clave de una tabla que tiene menor cantidad de registros",
 		"answer":false,
-		"explanation": "Genera un nuevo campo en la tabla que tiene menor cantidad de registros, no en la que tiene más. La clave foránea apunta a la clave primaria de la otra tabla."
+		"explanation": "Genera un nuevo campo en la tabla que tiene menor cantidad de registros, no en la que tiene mas. La clave foranea apunta a la clave primaria de la otra tabla."
 
 	},
 	{
@@ -361,13 +361,13 @@
 	{
 		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para realizar las operaciones de ingreso de datos",
 		"answer":false,
-		"explanation": "El DDL (Data Definition Language) se utiliza para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP). Las operaciones de ingreso de datos (insertar, actualizar, eliminar registros) se realizan con el DML (Data Manipulation Language), específicamente con el comando INSERT."
+		"explanation": "El DDL (Data Definition Language) se utiliza para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP). Las operaciones de ingreso de datos (insertar, actualizar, eliminar registros) se realizan con el DML (Data Manipulation Language), especificamente con el comando INSERT."
 
 	},
 	{
 		"question":"Los gestores de bases de datos relacionales deben proveer un DDL (data definition language) para eliminar registros de una tabla",
 		"answer":false,
-		"explanation": "El DDL (Data Definition Language) se utiliza para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP de objetos completos). La eliminación de registros (filas) específicos de una tabla es una operación de manipulación de datos, y se realiza con el DML (Data Manipulation Language) mediante el comando DELETE."
+		"explanation": "El DDL (Data Definition Language) se utiliza para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP de objetos completos). La eliminacion de registros (filas) especificos de una tabla es una operacion de manipulacion de datos, y se realiza con el DML (Data Manipulation Language) mediante el comando DELETE."
 
 	},
 	{
@@ -385,25 +385,25 @@
 	{
 		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: que no deben existir valores repetidos de Y para que exista dependencia funcional",
 		"answer":false,
-		"explanation": "La primera parte de la afirmación es la definición de una dependencia funcional X -> Y. La segunda parte es falsa: la dependencia funcional no exige que los valores de Y sean únicos en general; solo que sean únicos para cada valor dado de X."
+		"explanation": "La primera parte de la afirmacion es la definicion de una dependencia funcional X -> Y. La segunda parte es falsa: la dependencia funcional no exige que los valores de Y sean unicos en general; solo que sean unicos para cada valor dado de X."
 
 	},
 	{
 		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: quiere decir que si el valor del atributo X en una tupla es igual al valor de X en otra tupla entonces deben ser siempre distintos valores de Y apra que exista dependencia funcional",
 		"answer":false,
-		"explanation": "La primera parte ('Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]') es la definición correcta de una dependencia funcional X -> Y. Esto significa que si X es el mismo en dos tuplas, entonces Y *también debe ser el mismo* en esas tuplas. La segunda parte de la afirmación es la interpretación opuesta e incorrecta: para que exista X -> $ Y, los valores de Y deben ser iguales (no distintos) cuando los valores de X son iguales."
+		"explanation": "La primera parte ('Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]') es la definicion correcta de una dependencia funcional X -> Y. Esto significa que si X es el mismo en dos tuplas, entonces Y *tambien debe ser el mismo* en esas tuplas. La segunda parte de la afirmacion es la interpretacion opuesta e incorrecta: para que exista X -> $ Y, los valores de Y deben ser iguales (no distintos) cuando los valores de X son iguales."
 
 	},
 	{
 		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: que deben existir valores repetidos de X en distintas tuplas para que exista dependencia funcional",
 		"answer":false,
-		"explanation": "La primera parte ('Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]') es la definición de una dependencia funcional X -> Y. Esto significa que si X es el mismo en dos tuplas, entonces Y *también debe ser el mismo* en esas tuplas. La segunda parte es incorrecta: no es necesario que existan valores repetidos de X para que la dependencia funcional exista; la definición establece lo que debería ocurrir si X se repite."
+		"explanation": "La primera parte ('Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]') es la definicion de una dependencia funcional X -> Y. Esto significa que si X es el mismo en dos tuplas, entonces Y *tambieen debe ser el mismo* en esas tuplas. La segunda parte es incorrecta: no es necesario que existan valores repetidos de X para que la dependencia funcional exista; la definicion establece lo que deberia ocurrir si X se repite."
 
 	},
 	{
 		"question":"Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]: quiere decir que el valor del atributo X en una tupla tiene que ser siempre igual al valor de X en cualquier tupla y siempre distintos valores de Y para que exista dependencia funcional",
 		"answer":false,
-		"explanation": "La primera parte ('Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]') es la definición precisa de una dependencia funcional X -> Y Esto significa que si dos tuplas tienen el mismo valor para X, entonces Y *debe tener el mismo valor* en esas tuplas. La segunda parte es incorrecta: no implica que el valor de X deba ser siempre igual en todas las tuplas (eso convertiría a X en una clave candidata para la relación entera si es único, o implicaría que solo hay un valor posible para X). Tampoco significa que Y deba ser siempre distinto; de hecho, para la DF, Y debe ser igual cuando X es igual."
+		"explanation": "La primera parte ('Si t1[X] = t2[X] no puede haber t1[Y]!=t2[Y]') es la definicion precisa de una dependencia funcional X -> Y Esto significa que si dos tuplas tienen el mismo valor para X, entonces Y *debe tener el mismo valor* en esas tuplas. La segunda parte es incorrecta: no implica que el valor de X deba ser siempre igual en todas las tuplas (eso convertiria a X en una clave candidata para la relacion entera si es unico, o implicaria que solo hay un valor posible para X). Tampoco significa que Y deba ser siempre distinto; de hecho, para la DF, Y debe ser igual cuando X es igual."
 
 	},
 	{
@@ -414,12 +414,12 @@
 	{
 		"question":"una transaccion se define como un conjunto de operaciones que obligatoriamente deben ser recuperadas por el SGBD",
 		"answer":false,
-		"explanation": "Una transacción es una unidad atómica (todo o nada). La propiedad de durabilidad (ACID) asegura que los cambios confirmados persistan y sean recuperables por el SGBD en caso de fallo, pero la definición de transacción no es ser recuperada obligatoriamente."
+		"explanation": "Una transaccion es una unidad atomica (todo o nada). La propiedad de durabilidad (ACID) asegura que los cambios confirmados persistan y sean recuperables por el SGBD en caso de fallo, pero la definicion de transaccion no es ser recuperada obligatoriamente."
 	},
 	{
 		"question":"una transaccion es parte del diseño de la base de datos",
 		"answer":false,
-		"explanation": "Una transacción es un concepto operativo que asegura la integridad de los datos durante la ejecución de operaciones sobre la base de datos (parte del DML y TCL), no un elemento que se defina en el diseño estructural (DDL) de la misma."
+		"explanation": "Una transaccion es un concepto operativo que asegura la integridad de los datos durante la ejecucion de operaciones sobre la base de datos (parte del DML y TCL), no un elemento que se defina en el diseño estructural (DDL) de la misma."
 	},
 	{
 		"question":"una transaccion se define al momento de la operacion y las implementa la aplicacion cliente",
@@ -429,7 +429,7 @@
 	{
 		"question":"una transaccion se define como un conjunto de operaciones que no pueden fallar",
 		"answer":false,
-		"explanation": "Una transacción es un conjunto de operaciones que deben ejecutarse como una unidad atómica (todo o nada). Esto significa que, si alguna operación falla, todas las operaciones de la transacción se deshacen (rollback), de modo que la base de datos vuelve a su estado original consistente. No es que no puedan fallar, sino que su fallo se maneja de forma que no afecte la consistencia."
+		"explanation": "Una transaccion es un conjunto de operaciones que deben ejecutarse como una unidad atomica (todo o nada). Esto significa que, si alguna operacion falla, todas las operaciones de la transaccion se deshacen (rollback), de modo que la base de datos vuelve a su estado original consistente. No es que no puedan fallar, sino que su fallo se maneja de forma que no afecte la consistencia."
 	},
 	{
 		"question":"La implicacion de las dependencias funcionales permiten identificar un esquema indeseable",
@@ -454,27 +454,27 @@
 	{
 		"question":"La implicacion de las dependencias funcionales requiere que F(implicante) tenga mas de una DF",
 		"answer":false,
-		"explanation": "La implicación de dependencias funcionales se refiere a la capacidad de deducir nuevas dependencias a partir de un conjunto dado F de DFs, usando los Axiomas de Armstrong. Este proceso es válido incluso si F contiene solo una única dependencia funcional. Por ejemplo, de A -> BC (una sola DF en F), podemos implicar A -> B y A -> C."
+		"explanation": "La implicacion de dependencias funcionales se refiere a la capacidad de deducir nuevas dependencias a partir de un conjunto dado F de DFs, usando los Axiomas de Armstrong. Este proceso es valido incluso si F contiene solo una unica dependencia funcional. Por ejemplo, de A -> BC (una sola DF en F), podemos implicar A -> B y A -> C."
 	},
 	{
 		"question":"Una clave no puede contener todos los atributos de una relacion",
 		"answer":false,
-		"explanation": "Una clave candidata (y por ende la clave principal) sí puede contener todos los atributos de una relación. Esto ocurre cuando ninguna combinación más pequeña de atributos puede identificar de forma única las tuplas. En tal caso, el conjunto de todos los atributos de la relación es la única clave candidata posible"
+		"explanation": "Una clave candidata (y por ende la clave principal) si puede contener todos los atributos de una relacion. Esto ocurre cuando ninguna combinacion mas pequeña de atributos puede identificar de forma unica las tuplas. En tal caso, el conjunto de todos los atributos de la relacion es la unica clave candidata posible"
 	},
 	{
 		"question":"si un conjunto de atributos determina toda la relacion entonces ese conjunto es clave",
 		"answer":false,
-		"explanation": "Si un conjunto de atributos determina a toda la relación, es una superclave, no necesariamente una clave candidata. Para ser una clave candidata, además de determinar toda la relación, debe cumplir la condición de minimalidad (ningún subconjunto propio puede determinar la relación). Una superclave no mínima no es una clave."
+		"explanation": "Si un conjunto de atributos determina a toda la relacion, es una superclave, no necesariamente una clave candidata. Para ser una clave candidata, ademas de determinar toda la relacion, debe cumplir la condicion de minimalidad (ningun subconjunto propio puede determinar la relacion). Una superclave no minima no es una clave."
 	},
 	{
 		"question":"las claves candidatas son aquellas que no cumplen con la condicion de minimalidad",
 		"answer":false,
-		"explanation": "Una clave candidata debe cumplir obligatoriamente con la condición de minimalidad (ser el conjunto más pequeño de atributos que identifica una tupla de forma única)."
+		"explanation": "Una clave candidata debe cumplir obligatoriamente con la condicion de minimalidad (ser el conjunto mas pequeño de atributos que identifica una tupla de forma unica)."
 	},
 	{
 		"question":"el conjunto de todos los atributos siempre es clave",
 		"answer":false,
-		"explanation": "El conjunto de todos los atributos de una relación es clave solo si cumple con la condición de minimalidad."
+		"explanation": "El conjunto de todos los atributos de una relacion es clave solo si cumple con la condicion de minimalidad."
 	},
 	{
 		"question":"el cumpimiento de una forma normal por parte de una relacion es independiente del cumplimiento o no de las FN por otras relaciones vinculadas de la misma base de datos",
@@ -509,12 +509,12 @@
 	{
 		"question":"dada una relacion PERSONA(dni, dnihijodelapersona,profesiondelapersona) donde la persona puede tener mas de un hijo y una profesion. Esta relacion no cumple con la forma normal 2",
 		"answer":false,
-		"explanation": "La clave primaria de la relación es `(dni, dnihijodelapersona)`. El atributo no clave `profesiondelapersona` depende funcionalmente solo de `dni` (una parte de la clave primaria). Esto constituye una dependencia parcial, violando la Segunda Forma Normal (2FN)*"
+		"explanation": "La clave primaria de la relacion es `(dni, dnihijodelapersona)`. El atributo no clave `profesiondelapersona` depende funcionalmente solo de `dni` (una parte de la clave primaria). Esto constituye una dependencia parcial, violando la Segunda Forma Normal (2FN)*"
 	},
 	{
 		"question":"tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, conviene: modelar la relacion de forma embebida",
 		"answer":false,
-		"explanation": "No, no conviene modelar una relación 1:N con un N muy grande de forma embebida en MongoDB."
+		"explanation": "No, no conviene modelar una relacion 1:N con un N muy grande de forma embebida en MongoDB."
 	},
 	{
 		"question":"tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, conviene: modelar como una coleccion separada",
@@ -524,27 +524,27 @@
 	{
 		"question":"tengo una base de datos en mongoDB y una relacion !:n donde se estima tener un N muy grande, es indistinto de forma embebida o coleccion separada",
 		"answer":false,
-		"explanation": "No, no es indistinto. Si en MongoDB tienes una relación 1:N donde N es muy grande, no es conveniente modelarla de forma embebida. Debes usar una colección separada y referenciar los documentos."
+		"explanation": "No, no es indistinto. Si en MongoDB tienes una relacion 1:N donde N es muy grande, no es conveniente modelarla de forma embebida. Debes usar una coleccion separada y referenciar los documentos."
 	},
 	{
 		"question":"si una interrelacion uno a muchos en un der tiene un atributo este se convierte en un atributo de la tabla del lado uno",
 		"answer":false,
-		"explanation": "Si una interrelación 1:N en un DER tiene atributos, estos atributos se convierten en parte de la tabla del **lado 'muchos'**, junto con la clave foránea que apunta al lado 'uno'. No se añaden a la tabla del lado 'uno', ya que un único registro del lado 'uno' podría estar relacionado con múltiples conjuntos de estos atributos de la interrelación."
+		"explanation": "Si una interrelacion 1:N en un DER tiene atributos, estos atributos se convierten en parte de la tabla del **lado 'muchos'**, junto con la clave foranea que apunta al lado 'uno'. No se añaden a la tabla del lado 'uno', ya que un unico registro del lado 'uno' podria estar relacionado con multiples conjuntos de estos atributos de la interrelacion."
 	},
 	{
 		"question":"el cumplimiento de una forma normal por parte de una relacion depende del cumplimiento o no de las FN por otras relaciones vinculadas de la misma base de datos",
 		"answer":false,
-		"explanation": "El cumplimiento de una forma normal (FN) es una característica intrínseca de una relación (tabla) individual, basada en sus atributos y dependencias funcionales internas. No depende de si otras tablas vinculadas en la base de datos cumplen o no con sus propias formas normales. Cada relación se evalúa de forma independiente para su normalización."
+		"explanation": "El cumplimiento de una forma normal (FN) es una caracteristica intriinseca de una relacion (tabla) individual, basada en sus atributos y dependencias funcionales internas. No depende de si otras tablas vinculadas en la base de datos cumplen o no con sus propias formas normales. Cada relacion se evaluua de forma independiente para su normalizacion."
 	},
 	{
 		"question":"Un DDL (data definition language) provee un lenguaje para la formuilacion de consultas entre otras cosas",
 		"answer":false,
-		"explanation": "El DDL (Data Definition Language) se usa para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP). La formulación de consultas para recuperar datos** es tarea del DQL (Data Query Language), cuyo comando principal es `SELECT`."
+		"explanation": "El DDL (Data Definition Language) se usa para definir y modificar la estructura de la base de datos (CREATE, ALTER, DROP). La formulacion de consultas para recuperar datos** es tarea del DQL (Data Query Language), cuyo comando principal es `SELECT`."
 	},
 	{
 		"question":"en un der una interrelacion muchos a muchos genera un atributo en la tabla que mas tuplas tiene y que es clave foranea hacia la clave principal que tiene menos registros",
 		"answer":false,
-		"explanation": "Una interrelación muchos a muchos (M:N)** en un DER siempre genera una **nueva tabla intermedia para su implementación en el modelo relacional. Esta nueva tabla contiene dos o más claves foráneas, cada una apuntando a la clave principal de una de las entidades participantes en la relación M:N. La cantidad de tuplas en las tablas originales no determina dónde se coloca la FK, sino la necesidad de una tabla de unión para resolver la cardinalidad M:N."
+		"explanation": "Una interrelacion muchos a muchos (M:N)** en un DER siempre genera una **nueva tabla intermedia para su implementacion en el modelo relacional. Esta nueva tabla contiene dos o mas claves foraaneas, cada una apuntando a la clave principal de una de las entidades participantes en la relacion M:N. La cantidad de tuplas en las tablas originales no determina donde se coloca la FK, sino la necesidad de una tabla de unioon para resolver la cardinalidad M:N."
 	},
 	{
 		"question":"una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave foranea",
