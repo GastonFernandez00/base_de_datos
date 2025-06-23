@@ -51,8 +51,8 @@ Explanation: {n["explanation"]}
         self._total_questions: int = len(self._json_file)
 
     def _check_answer(self, answer: str) -> str:
-        permitted_true_answers: list[str] = ["yes", "y", "1", "+"]
-        permitted_false_answers: list[str] = ["no", "n", "0", "-"]
+        permitted_true_answers: list[str] = ["yes", "y", "1", "+", "true", "t"]
+        permitted_false_answers: list[str] = ["no", "n", "0", "-", "false", "f"]
 
         while (
             answer not in permitted_true_answers
