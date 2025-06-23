@@ -169,7 +169,7 @@
 	{
 		"question":"la operacion de division del algebra relacional me permite determinar si todos los valores clave de una relacion son valor de un campo en otra relacion",
 		"answer":false,
-		"explanation":"sabra Dios"
+		"explanation":null
 
 	},
 	{
@@ -550,5 +550,10 @@
 		"question":"una dependencia funcional trivial es aquella que tiene del lado izquierdo una clave foranea",
 		"answer":false,
 		"explanation": "Una dependencia funcional trivial es aquella donde el lado derecho es un subconjunto del lado izquierdo."
+	},
+	{
+		"question":"si tengo una relacion de la forma EMPLEADO(legajo,nombre,apellido,telefono) donde un empleado puede tener mas de un telefono el atributo legajo es la clave principal y el atributo telefono es clave candidata",
+		"answer":false,
+		"explanation":null
 	}
 ]
