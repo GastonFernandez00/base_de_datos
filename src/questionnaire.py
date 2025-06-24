@@ -35,11 +35,12 @@ Explanation: {n["explanation"]}
 
     def _define_exam(self) -> str:
         print("Which exam are you gonna take? 1|2")
-        exam = int(input())
-        while exam != 1 and exam != 2:
-            exam = int(input())
+        exam = input()
+        while exam != "1" and exam != "2":
+            print(" Wrong input. There's only two available options '1' or '2'.\n")
+            exam = input()
 
-        if exam == 1:
+        if exam == "1":
             return "files/questions_parcial_1.json"
         else:
             return "files/questions_parcial_2.json"
