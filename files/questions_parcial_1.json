@@ -508,7 +508,7 @@
 	},
 	{
 		"question":"dada una relacion PERSONA(dni, dnihijodelapersona,profesiondelapersona) donde la persona puede tener mas de un hijo y una profesion. Esta relacion no cumple con la forma normal 2",
-		"answer":false,
+		"answer":true,
 		"explanation": "La clave primaria de la relacion es `(dni, dnihijodelapersona)`. El atributo no clave `profesiondelapersona` depende funcionalmente solo de `dni` (una parte de la clave primaria). Esto constituye una dependencia parcial, violando la Segunda Forma Normal (2FN)*"
 	},
 	{
