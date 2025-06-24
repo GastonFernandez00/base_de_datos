@@ -198,7 +198,7 @@
 	},
 	{
 		"question":"una clave foranea siempre apunta a una clave de otra relacion",
-		"answer":true,
+		"answer":false,
 		"explanation":null
 
 	},
@@ -240,7 +240,7 @@
 	},
 	{
 		"question":"nunca puedo permitir nulos en los atributos que constituyen una FK",
-		"answer":true,
+		"answer":false,
 		"explanation":null
 
 	},
